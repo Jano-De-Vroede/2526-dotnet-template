@@ -85,8 +85,8 @@ try
         }
     }
     // Theses middlewares are strict in order of calling!
-    app.UseHttpsRedirection()
-        .UseBlazorFrameworkFiles() // Blazor is also served from the API. 
+    // appUseHttpsRedirection()
+     app.UseBlazorFrameworkFiles() // Blazor is also served from the API. 
         .UseStaticFiles()
         .UseDefaultExceptionHandler()
         .UseAuthentication()
